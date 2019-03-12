@@ -10,8 +10,6 @@ export const Root = () => {
     router
       .resolve(location.pathname || "")
       .then(component => setComponent(component));
-
-    return;
   }, [router, location.pathname]);
 
   return Component;
