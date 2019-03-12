@@ -7,7 +7,11 @@ const Button = styled.button`
   background-color: tomato;
 `;
 
-class App extends Component {
+interface AppProps {
+  message?: string;
+}
+
+class App extends Component<AppProps> {
   render() {
     return (
       <div className="App">
@@ -25,7 +29,7 @@ class App extends Component {
             Learn React
           </a>
 
-          <Button>Hello world</Button>
+          <Button>Hello world {this.props.message}</Button>
         </header>
       </div>
     );
