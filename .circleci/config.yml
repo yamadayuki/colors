@@ -32,4 +32,4 @@ jobs:
 
       - run:
           name: Report to Codecov
-          command: yarn codecov
+          command: yarn codecov --token=$CODECOV_TOKEN
