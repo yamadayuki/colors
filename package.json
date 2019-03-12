@@ -31,5 +31,11 @@
     "@types/styled-components": "^4.1.12",
     "codecov": "^3.2.0",
     "typescript": "^3.3.3333"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,ts,tsx}",
+      "!src/serviceWorker.js"
+    ]
   }
 }
